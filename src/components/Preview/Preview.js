@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Preview = () => {
+ const Preview = () => {
   return (
     <div className="col-md-6 bg-info">Hi</div>
   )
 }
+
+export default Preview
