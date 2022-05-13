@@ -4,7 +4,7 @@ import  Preview  from './components/Preview/Preview';
 import UserCustomStyle from './components/UserStyles/UserCustomStyle';
 function App() {
   return (
-    <div className="row " >
+    <div className="row " style={{height:"100vh" , overflow:"scroll"}}>
       <Layout/>
       {/* <Preview/> */}
       <UserCustomStyle/>
