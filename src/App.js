@@ -2,11 +2,14 @@ import './App.css';
 import Layout from './components/Layout/Layout'
 import  Preview  from './components/Preview/Preview';
 import UserCustomStyle from './components/UserStyles/UserCustomStyle';
+
+
 function App() {
+  const divStyles ={height:"100vh"}
   return (
-    <div className="row " style={{height:"100vh" , overflow:"scroll"}}>
+    <div className="row " style={divStyles}>
       <Layout/>
-      {/* <Preview/> */}
+      <Preview/>
       <UserCustomStyle/>
     </div>
   );

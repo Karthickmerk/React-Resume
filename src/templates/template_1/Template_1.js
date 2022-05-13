@@ -71,6 +71,8 @@ const Template1 = () => {
                   desc='jkfjalkfjlkafdja;lkfj kfj lkfjlkaj lkfj;lk jfk jlkjfkdjslkfjsalk jkfjlk jlkfjalkffkjsadlkfjsalkdj lkjlk jfkaj lkjfkdjfk awjfdk'
                   />
 
+                  
+
                   <h4 className='top-bottom-border'>LANGUAGE</h4>
                   <div className='progress-cards'>
                   <ProgressBar percent='60' title='Engish'/>  
