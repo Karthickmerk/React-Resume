@@ -5,7 +5,9 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
     font-family: 'Roboto Slab', serif;
     border-radius: 10px;
-    background-color: #FBF1EA;
+    background-color: black;
+    height: 100vh;
+    width: 45vh;
 }
 h5{
     text-align: center;
@@ -13,21 +15,26 @@ h5{
     text-transform:uppercase;
     font-weight: bold;
     font-size: 16px;
+    color: white;
+    
 }
+
 h6{
     text-align: left;
     margin: 10px;
     font-weight: 500;
+    color: white;
 }
 
 
 .form-group{
-    margin-left: 1px;
+    margin-left: 8px;
 }
 .formtxt{
     border-radius: 5px;
-    background-color: #E8E7E6;
-    border: 1px solid silver;
+    background-color: #3e4041;
+    border: 1px solid white;
+    color: white;
     height: 5.5vh;
     width: 95%;
 }
@@ -36,6 +43,108 @@ h6{
 
 .formtxt:focus{
     outline: none;
-    background-color: white;
+    background-color: rgb(70, 66, 66);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+:root {
+    --niceblue: #3db5ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.flex-centered {
+    display: flex;
+    height: 100%;
+    width: 10px;
+    position: relative;
+    margin-top: 0px;
+}
+
+/* ----- Menu ----- */
+
+menu#side-menu {
+    display: inline-block;
+    background: #EE3710;
+    padding: 0;
+    margin: 0;
+    max-width: 250px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+menu#side-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+menu#side-menu ul li.side-menu-item {
+    list-style-type: none;
+    display: block;
+}
+
+menu#side-menu ul li.side-menu-item .side-menu-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+menu#side-menu ul li.side-menu-item .side-menu-icon {
+    padding: 1rem 1.15rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+menu#side-menu ul li.side-menu-item .side-menu-icon svg {
+    position: relative;
+    top: 0.1rem;
+}
+
+
+menu#side-menu ul li.side-menu-item .side-menu-text a {
+    color: #cecece;
+    text-decoration: none;
+}
+
+menu#side-menu ul li.side-menu-item:first-child:hover {
+     border-radius: 10px 10px 0 0;
+}
+
+menu#side-menu ul li.side-menu-item:last-child:hover {
+    border-radius: 0 0 10px 10px;
+}
+
+menu#side-menu ul li.side-menu-item:hover {
+    background: rgb(251, 247, 247);
+}
+
+menu#side-menu ul li.side-menu-item:hover .side-menu-icon .svg-icon  {
+    color: #FF5733
+}
+
+menu#side-menu ul li.side-menu-item .svg-icon {
+    width: 1em;
+    height: 1em;
+}
+
+menu#side-menu ul li.side-menu-item .svg-icon  {
+    fill: #cecece;
+}
+
+menu#side-menu ul li.side-menu-item .svg-icon {
+    stroke: #cecece;
+    stroke-width: 1;
+}
+
+.svg-icon{
+    color: white;
 }

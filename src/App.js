@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="row " style={divStyles}>
       <Layout/>
-      <Preview/>
+      {/* <Preview/> */}
       <UserCustomStyle/>
     </div>
   );

@@ -2,16 +2,17 @@ import React from 'react'
 import './template_1.css';
 import BlockContent from './BlockContent';
 import ProgressBar from './ProgressBar';
-const Template1 = () => {
+const Template1 = (prop) => {
+      const formValues=prop.name.name;
   return (
     <div className='container' >
           {/* Header */}
         <div className='header'>
           <div className='name'>
-              KARTHICK R
+             {formValues.fName}
             </div>
             <div className='position'>
-              <p>SOFTWARE DEVELOPER</p>
+              <p>{formValues.role}</p>
             </div>
             <div className='contacts'>
                 <div className='location'>
@@ -19,7 +20,7 @@ const Template1 = () => {
 
                       </div>
                       <div className='address'>
-                           45A, Gengadevan Kuppam, 603304
+                          {formValues.address}
                       </div>
                 </div>
                 <div className='phone'>
@@ -27,7 +28,7 @@ const Template1 = () => {
 
                       </div>
                       <div className='phone_numer'>
-                            9092022404
+                            {formValues.mobile}
                       </div>
                 </div>
                 <div className='email'>
@@ -35,7 +36,7 @@ const Template1 = () => {
 
                       </div>
                       <div className='email_id'>
-                            wikimerky@gmail.com
+                           {formValues.emailid}
                       </div>
                 </div>
             </div>
