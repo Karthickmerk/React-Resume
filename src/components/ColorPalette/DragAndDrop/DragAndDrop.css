@@ -1,0 +1,12 @@
+.dragAndDrop {
+  display: flex;
+  border: 2px black solid;
+  border-radius: 5%;
+  margin: 5px;
+  cursor: all-scroll;
+  padding: 1px;
+}
+
+.dragAndDrop > * {
+  padding: 10px;
+}
