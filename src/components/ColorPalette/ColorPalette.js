@@ -33,18 +33,21 @@ const ColorPalette = () => {
           <label> PrimaryColor</label>
           <FontColorComponent
             colors={primaryColor}
+            type={"primaryColor"}
             colorSelected={(item) => setPrimaryColor(item)}
           />
           <br />
           <label> SecondaryColor</label>
           <FontColorComponent
             colors={SecondaryColor}
+            type={"secondaryColor"}
             colorSelected={(item) => setSecondaryColor(item)}
           />
           <br />
           <label> OtherColors</label>
           <FontColorComponent
             colors={OtherColors}
+            type={"otherColor"}
             colorSelected={(item) => setOtherColor(item)}
           />
         </div>
